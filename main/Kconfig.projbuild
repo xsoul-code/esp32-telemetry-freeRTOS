@@ -1,9 +1,24 @@
 menu "PIR Configuration"
-    config PIR_SIMULATION_MODE
-        bool "Use simulated PIR sensor instead of real GPIO"
-        default n
-        help
-            If enabled, PIR sensor state will be randomly simulated.
-            If disabled, real GPIO pin will be used.
-endmenu
 
+config PIR_SIMULATION_MODE
+    bool "Simulate PIR sensor"
+    default n
+    help
+        When the option is true, then ESP will log on startup simulation choice and
+        simulate the boolean values of PIR sensor response. The values will be logged
+        as it would be a acquisition from GPIO port.
+
+choice PIR_GPIO_MODE
+    prompt "GPIO acquisition mode"
+    depends on !PIR_SIMULATION_MODE
+    default PIR_POLLING
+
+config PIR_POLLING
+    bool "Polling"
+
+config PIR_ISR
+    bool "Interrupt (ISR)"
+
+endchoice
+
+endmenu
