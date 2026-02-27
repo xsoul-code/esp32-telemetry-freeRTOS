@@ -8,8 +8,9 @@
 #include "esp_log.h"
 #include "esp_timer.h"
 #include "esp_system.h"
+#include "driver/gpio.h"
 
-
+#define PIRIO GPIO_NUM_21
 #define TAG "PIR_Sensor_System"
 
 QueueHandle_t buffer;
@@ -23,7 +24,11 @@ typedef struct
 void datastream_task(void *pvParameters)
 {
 	datasensor_t data1;
+	
+	//Set the mode in idf.py menuconfig before compiling
 	#ifdef CONFIG_PIR_SIMULATION_MODE
+	
+	ESP_LOGI(TAG, "is set to PIR_SIMULATION mode of operation in menuconfig"); //Changing mode using idf.py menuconfig
 	
 	while(1)
 	{
@@ -36,15 +41,16 @@ void datastream_task(void *pvParameters)
 	}
 	
 	#else
-	
-		// prawdziwe GPIO
-	ESP_LOGI(TAG, "detected GPIO mode of operation set in menuconfig");
+	//GPIO Mode set in menuconfig -> PIR_Configuration
+
+	ESP_LOGI(TAG, "is set to GPIO mode of operation in menuconfig"); //Changing mode using idf.py menuconfig
 	while(1)
 	{
+		
 		//Timestamp in ms
 		data1.timestamp = esp_timer_get_time() / 1000;
 		//Receiving a sensor data through GPIO
-		data1.PIR_sensor = 0; //TODO: Implementation of GPIO handling
+		data1.PIR_sensor = gpio_get_level(PIRIO); //TODO: Implementation of GPIO handling
 		xQueueSend(buffer, ( void * ) &data1, portMAX_DELAY);
 		vTaskDelay(pdMS_TO_TICKS(1000));
 	}
@@ -68,7 +74,17 @@ void datalogger_task(void *pvParameters)
 
 void app_main(void)
 {
-	buffer = xQueueCreate(5, sizeof(datasensor_t));
+	//GPIO setup: interrupt HIGH, PULL DOWN
+	
+	gpio_config_t pir_config ={
+		.pin_bit_mask = (1ULL << PIRIO),
+		.mode = GPIO_MODE_INPUT,
+		.pull_down_en = GPIO_PULLDOWN_ENABLE,
+		.pull_up_en = GPIO_PULLUP_DISABLE,
+		.intr_type = GPIO_INTR_DISABLE
+	};
+	gpio_config(&pir_config);
+	buffer = xQueueCreate(1, sizeof(datasensor_t));
 
 	xTaskCreate(datastream_task, "data_stream", 2048, NULL, 5, NULL);
 	xTaskCreate(datalogger_task, "data_logger", 2048, NULL, 5, NULL);
