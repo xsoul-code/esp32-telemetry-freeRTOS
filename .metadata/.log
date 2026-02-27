@@ -1,0 +1,179 @@
+!SESSION 2026-02-27 14:51:47.209 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=21.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pl_PL
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.launchbar.core 2 0 2026-02-27 14:52:30.567
+!MESSAGE Enablement expression is missing for descriptor type com.espressif.idf.debug.gdbjtag.openocd.descriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2026-02-27 14:52:30.568
+!MESSAGE Enablement expression is missing for config provider for com.espressif.idf.debug.gdbjtag.openocd.descriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2026-02-27 14:52:30.568
+!MESSAGE Enablement expression is missing for config provider for com.espressif.idf.launch.serial.core.idf.descriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2026-02-27 14:52:30.568
+!MESSAGE Enablement expression is missing for descriptor type com.espressif.idf.launch.serial.core.idf.descriptorType
+
+!ENTRY com.espressif.idf.core 1 0 2026-02-27 14:52:30.676
+!MESSAGE Watcher added to the directory: /home/xsoul/.espressif/tools/
+
+!ENTRY com.espressif.idf.core 1 0 2026-02-27 14:52:30.814
+!MESSAGE ESP-IDF path is null or empty, cannot read targets
+
+!ENTRY com.espressif.idf.core 1 0 2026-02-27 14:52:30.815
+!MESSAGE Dynamically loaded 0 toolchain elements from ESP-IDF
+
+!ENTRY com.espressif.idf.core 1 0 2026-02-27 14:52:30.930
+!MESSAGE ESP-IDF path is null or empty, cannot read targets
+
+!ENTRY com.espressif.idf.core 1 0 2026-02-27 14:52:30.930
+!MESSAGE Dynamically loaded 0 toolchain elements from ESP-IDF
+
+!ENTRY com.espressif.idf.core 1 0 2026-02-27 14:52:30.930
+!MESSAGE Initializing toolchain...
+
+!ENTRY com.espressif.idf.core 1 0 2026-02-27 14:52:30.931
+!MESSAGE idf_tools.py path: null/tools/idf_tools.py
+
+!ENTRY com.espressif.idf.core 1 0 2026-02-27 14:52:30.931
+!MESSAGE idf_tools.py path doesn't exist
+
+!ENTRY com.espressif.idf.core 1 0 2026-02-27 14:52:30.931
+!MESSAGE [/home/xsoul/.cargo/bin:/home/xsoul/.local/bin:/home/xsoul/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/xsoul/.dotnet/tools]
+
+!ENTRY com.espressif.idf.core 1 0 2026-02-27 14:52:31.031
+!MESSAGE testRun: null
+
+!ENTRY com.espressif.idf.core 1 0 2026-02-27 14:52:31.032
+!MESSAGE Updating environment variables with key:EIM_PATH value:/usr/bin/eim
+
+!ENTRY com.espressif.idf.core 1 0 2026-02-27 14:52:42.969
+!MESSAGE PATH=/home/xsoul/.espressif/tools/cmake/3.30.2/bin:/home/xsoul/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin:/home/xsoul/.espressif/tools/esp-rom-elfs/20241011/:/home/xsoul/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin:/home/xsoul/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/esp32ulp-elf/bin:/home/xsoul/.espressif/tools/ninja/1.12.1/:/home/xsoul/.espressif/tools/openocd-esp32/v0.12.0-esp32-20251215/openocd-esp32/bin:/home/xsoul/.espressif/tools/qemu-xtensa/esp_develop_9.2.2_20250817/qemu/bin:/home/xsoul/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin:/home/xsoul/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/riscv32-esp-elf/bin:/home/xsoul/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin:/home/xsoul/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin:/home/xsoul/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/xtensa-esp-elf/bin:/home/xsoul/.espressif/tools/python/v5.5.3/venv/bin
+SYSTEM_PATH=/home/xsoul/.cargo/bin:/home/xsoul/.local/bin:/home/xsoul/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/xsoul/.dotnet/tools:/home/xsoul/.espressif/tools
+ESP_IDF_VERSION=5.5
+IDF_TOOLS_PATH=/home/xsoul/.espressif/tools
+IDF_PATH=/home/xsoul/.espressif/v5.5.3/esp-idf
+ESP_ROM_ELF_DIR=/home/xsoul/.espressif/tools/esp-rom-elfs/20241011
+OPENOCD_SCRIPTS=/home/xsoul/.espressif/tools/openocd-esp32/v0.12.0-esp32-20251215/openocd-esp32/share/openocd/scripts
+IDF_PYTHON_ENV_PATH=/home/xsoul/.espressif/tools/python/v5.5.3/venv
+
+!ENTRY com.espressif.idf.core 1 0 2026-02-27 14:52:42.969
+!MESSAGE Processing output from activation script
+
+!ENTRY com.espressif.idf.core 1 0 2026-02-27 14:52:42.970
+!MESSAGE Setting up IDE environment variables
+
+!ENTRY com.espressif.idf.core 1 0 2026-02-27 14:52:42.970
+!MESSAGE Updating environment variables with key:PATH value:/home/xsoul/.espressif/tools/cmake/3.30.2/bin:/home/xsoul/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin:/home/xsoul/.espressif/tools/esp-rom-elfs/20241011/:/home/xsoul/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin:/home/xsoul/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/esp32ulp-elf/bin:/home/xsoul/.espressif/tools/ninja/1.12.1/:/home/xsoul/.espressif/tools/openocd-esp32/v0.12.0-esp32-20251215/openocd-esp32/bin:/home/xsoul/.espressif/tools/qemu-xtensa/esp_develop_9.2.2_20250817/qemu/bin:/home/xsoul/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin:/home/xsoul/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/riscv32-esp-elf/bin:/home/xsoul/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin:/home/xsoul/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin:/home/xsoul/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/xtensa-esp-elf/bin:/home/xsoul/.espressif/tools/python/v5.5.3/venv/bin
+
+!ENTRY com.espressif.idf.core 1 0 2026-02-27 14:52:42.971
+!MESSAGE Updating environment variables with key:IDF_TOOLS_PATH value:/home/xsoul/.espressif/tools
+
+!ENTRY com.espressif.idf.core 1 0 2026-02-27 14:52:42.971
+!MESSAGE Updating environment variables with key:SYSTEM_PATH value:/home/xsoul/.cargo/bin:/home/xsoul/.local/bin:/home/xsoul/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/xsoul/.dotnet/tools:/home/xsoul/.espressif/tools
+
+!ENTRY com.espressif.idf.core 1 0 2026-02-27 14:52:42.972
+!MESSAGE Updating environment variables with key:OPENOCD_SCRIPTS value:/home/xsoul/.espressif/tools/openocd-esp32/v0.12.0-esp32-20251215/openocd-esp32/share/openocd/scripts
+
+!ENTRY com.espressif.idf.core 1 0 2026-02-27 14:52:42.972
+!MESSAGE Updating environment variables with key:IDF_PATH value:/home/xsoul/.espressif/v5.5.3/esp-idf
+
+!ENTRY com.espressif.idf.core 1 0 2026-02-27 14:52:42.973
+!MESSAGE Updating environment variables with key:ESP_IDF_VERSION value:5.5
+
+!ENTRY com.espressif.idf.core 1 0 2026-02-27 14:52:42.974
+!MESSAGE Updating environment variables with key:IDF_PYTHON_ENV_PATH value:/home/xsoul/.espressif/tools/python/v5.5.3/venv
+
+!ENTRY com.espressif.idf.core 1 0 2026-02-27 14:52:42.974
+!MESSAGE Updating environment variables with key:ESP_ROM_ELF_DIR value:/home/xsoul/.espressif/tools/esp-rom-elfs/20241011
+
+!ENTRY com.espressif.idf.core 1 0 2026-02-27 14:52:42.975
+!MESSAGE Updating environment variables with key:PATH value:/home/xsoul/.espressif/tools/cmake/3.30.2/bin:/home/xsoul/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin:/home/xsoul/.espressif/tools/esp-rom-elfs/20241011/:/home/xsoul/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin:/home/xsoul/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/esp32ulp-elf/bin:/home/xsoul/.espressif/tools/ninja/1.12.1/:/home/xsoul/.espressif/tools/openocd-esp32/v0.12.0-esp32-20251215/openocd-esp32/bin:/home/xsoul/.espressif/tools/qemu-xtensa/esp_develop_9.2.2_20250817/qemu/bin:/home/xsoul/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin:/home/xsoul/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/riscv32-esp-elf/bin:/home/xsoul/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin:/home/xsoul/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin:/home/xsoul/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/xtensa-esp-elf/bin:/home/xsoul/.espressif/tools/python/v5.5.3/venv/bin:/home/xsoul/.cargo/bin:/home/xsoul/.local/bin:/home/xsoul/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/xsoul/.dotnet/tools:/home/xsoul/.espressif/tools
+
+!ENTRY com.espressif.idf.core 1 0 2026-02-27 14:52:42.975
+!MESSAGE Updating environment variables with key:IDF_COMPONENT_MANAGER value:1
+
+!ENTRY com.espressif.idf.core 1 0 2026-02-27 14:52:42.976
+!MESSAGE Updating environment variables with key:IDF_MAINTAINER value:1
+
+!ENTRY com.espressif.idf.core 1 0 2026-02-27 14:52:42.976
+!MESSAGE Updating environment variables with key:ESP_IDF_EIM_ID value:esp-idf-1e271180d15d4b4583d2d7b453c6cfcc
+
+!ENTRY com.espressif.idf.core 1 0 2026-02-27 14:52:42.977
+!MESSAGE Updating environment variables with key:PYTHON_EXE_PATH value:/home/xsoul/.espressif/tools/python/v5.5.3/venv/bin/python
+
+!ENTRY com.espressif.idf.core 1 0 2026-02-27 14:52:42.978
+!MESSAGE Setting up toolchains
+
+!ENTRY com.espressif.idf.core 1 0 2026-02-27 14:52:42.978
+!MESSAGE Executing:[/home/xsoul/.espressif/tools/python/v5.5.3/venv/bin/python, /home/xsoul/.espressif/v5.5.3/esp-idf/tools/idf.py, --list-targets]
+
+!ENTRY com.espressif.idf.core 1 0 2026-02-27 14:52:44.411
+!MESSAGE esp32
+esp32s2
+esp32c3
+esp32s3
+esp32c2
+esp32c6
+esp32h2
+esp32p4
+esp32c5
+esp32c61
+
+
+!ENTRY com.espressif.idf.core 1 0 2026-02-27 14:52:44.412
+!MESSAGE Successfully read 10 supported targets and 3 preview targets
+
+!ENTRY com.espressif.idf.core 1 0 2026-02-27 14:52:44.412
+!MESSAGE Dynamically loaded 13 toolchain elements from ESP-IDF
+
+!ENTRY com.espressif.idf.core 1 0 2026-02-27 14:52:44.414
+!MESSAGE Successfully read 10 supported targets and 3 preview targets
+
+!ENTRY com.espressif.idf.core 1 0 2026-02-27 14:52:44.414
+!MESSAGE Dynamically loaded 13 toolchain elements from ESP-IDF
+
+!ENTRY com.espressif.idf.core 1 0 2026-02-27 14:52:44.419
+!MESSAGE Initializing toolchain...
+
+!ENTRY com.espressif.idf.core 1 0 2026-02-27 14:52:44.420
+!MESSAGE idf_tools.py path: /home/xsoul/.espressif/v5.5.3/esp-idf/tools/idf_tools.py
+
+!ENTRY com.espressif.idf.core 1 0 2026-02-27 14:52:44.420
+!MESSAGE [/home/xsoul/.espressif/tools/python/v5.5.3/venv/bin/python, /home/xsoul/.espressif/v5.5.3/esp-idf/tools/idf_tools.py, export, --format=key-value]
+
+!ENTRY com.espressif.idf.core 1 0 2026-02-27 14:52:44.566
+!MESSAGE idf_tools.py export output: Not using an unsupported version of tool cmake found in PATH: 3.28.3. To use it, run '/home/xsoul/.espressif/tools/python/v5.5.3/venv/bin/python /home/xsoul/.espressif/v5.5.3/esp-idf/tools/idf_tools.py export --prefer-system'
+OPENOCD_SCRIPTS=/home/xsoul/.espressif/tools/openocd-esp32/v0.12.0-esp32-20251215/openocd-esp32/share/openocd/scripts
+ESP_ROM_ELF_DIR=/home/xsoul/.espressif/tools/esp-rom-elfs/20241011/
+IDF_PYTHON_ENV_PATH=/home/xsoul/.espressif/python_env/idf5.5_py3.12_env
+ESP_IDF_VERSION=5.5
+PATH=/home/xsoul/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin:/home/xsoul/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin:/home/xsoul/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin:/home/xsoul/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin:/home/xsoul/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin:/home/xsoul/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin:/home/xsoul/.espressif/tools/cmake/3.30.2/bin:/home/xsoul/.espressif/tools/openocd-esp32/v0.12.0-esp32-20251215/openocd-esp32/bin:/home/xsoul/.espressif/tools/ninja/1.12.1/:/home/xsoul/.espressif/tools/qemu-xtensa/esp_develop_9.2.2_20250817/qemu/bin:/home/xsoul/.espressif/python_env/idf5.5_py3.12_env/bin:/home/xsoul/.espressif/v5.5.3/esp-idf/tools:$PATH
+IDF_DEACTIVATE_FILE_PATH=/tmp/tmp12tqeitdidf_15910
+
+!ENTRY com.espressif.idf.core 1 0 2026-02-27 14:52:44.566
+!MESSAGE PATH: /home/xsoul/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin:/home/xsoul/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin:/home/xsoul/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin:/home/xsoul/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin:/home/xsoul/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin:/home/xsoul/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin:/home/xsoul/.espressif/tools/cmake/3.30.2/bin:/home/xsoul/.espressif/tools/openocd-esp32/v0.12.0-esp32-20251215/openocd-esp32/bin:/home/xsoul/.espressif/tools/ninja/1.12.1/:/home/xsoul/.espressif/tools/qemu-xtensa/esp_develop_9.2.2_20250817/qemu/bin:/home/xsoul/.espressif/python_env/idf5.5_py3.12_env/bin:/home/xsoul/.espressif/v5.5.3/esp-idf/tools:$PATH
+
+!ENTRY com.espressif.idf.core 1 0 2026-02-27 14:52:44.566
+!MESSAGE [/home/xsoul/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin:/home/xsoul/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin:/home/xsoul/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin:/home/xsoul/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin:/home/xsoul/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin:/home/xsoul/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin:/home/xsoul/.espressif/tools/cmake/3.30.2/bin:/home/xsoul/.espressif/tools/openocd-esp32/v0.12.0-esp32-20251215/openocd-esp32/bin:/home/xsoul/.espressif/tools/ninja/1.12.1/:/home/xsoul/.espressif/tools/qemu-xtensa/esp_develop_9.2.2_20250817/qemu/bin:/home/xsoul/.espressif/python_env/idf5.5_py3.12_env/bin:/home/xsoul/.espressif/v5.5.3/esp-idf/tools:$PATH]
+
+!ENTRY com.espressif.idf.core 1 0 2026-02-27 14:52:44.625
+!MESSAGE Copying OpenOCD Rules
+
+!ENTRY com.espressif.idf.core 1 0 2026-02-27 14:52:44.626
+!MESSAGE Copying OpenOCD Rules
+
+!ENTRY com.espressif.idf.core 1 0 2026-02-27 14:52:44.626
+!MESSAGE Copying File: /home/xsoul/.espressif/tools/openocd-esp32/v0.12.0-esp32-20251215/openocd-esp32/bin/../share/openocd/contrib/60-openocd.rules to destination: /etc/udev/rules.d/60-openocd.rules
+
+!ENTRY com.espressif.idf.core 1 0 2026-02-27 14:52:49.927
+!MESSAGE Rules Not Copied to system
+
+!ENTRY com.espressif.idf.core 1 0 2026-02-27 14:52:49.928
+!MESSAGE Applying Clangd Preferences
+
+!ENTRY com.espressif.idf.core 1 0 2026-02-27 14:52:49.951
+!MESSAGE Tools Setup complete

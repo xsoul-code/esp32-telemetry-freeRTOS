@@ -1,0 +1,9 @@
+menu "PIR Configuration"
+    config PIR_SIMULATION_MODE
+        bool "Use simulated PIR sensor instead of real GPIO"
+        default n
+        help
+            If enabled, PIR sensor state will be randomly simulated.
+            If disabled, real GPIO pin will be used.
+endmenu
+

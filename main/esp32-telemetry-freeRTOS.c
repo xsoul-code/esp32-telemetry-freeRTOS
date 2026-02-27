@@ -23,6 +23,8 @@ typedef struct
 void datastream_task(void *pvParameters)
 {
 	datasensor_t data1;
+	#ifdef CONFIG_PIR_SIMULATION_MODE
+	
 	while(1)
 	{
 		//Timestamp in ms
@@ -32,6 +34,22 @@ void datastream_task(void *pvParameters)
 		xQueueSend(buffer, ( void * ) &data1, portMAX_DELAY);
 		vTaskDelay(pdMS_TO_TICKS(1000));
 	}
+	
+	#else
+	
+		// prawdziwe GPIO
+	ESP_LOGI(TAG, "detected GPIO mode of operation set in menuconfig");
+	while(1)
+	{
+		//Timestamp in ms
+		data1.timestamp = esp_timer_get_time() / 1000;
+		//Receiving a sensor data through GPIO
+		data1.PIR_sensor = 0; //TODO: Implementation of GPIO handling
+		xQueueSend(buffer, ( void * ) &data1, portMAX_DELAY);
+		vTaskDelay(pdMS_TO_TICKS(1000));
+	}
+
+	#endif
 
 }
 

@@ -432,6 +432,12 @@ CONFIG_PARTITION_TABLE_MD5=y
 # end of Partition Table
 
 #
+# PIR Configuration
+#
+# CONFIG_PIR_SIMULATION_MODE is not set
+# end of PIR Configuration
+
+#
 # Compiler options
 #
 CONFIG_COMPILER_OPTIMIZATION_DEBUG=y
