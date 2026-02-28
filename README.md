@@ -13,6 +13,8 @@ and greater awareness of "bare metal" workings of microcontroller and other embe
 
 The idea of data flow in system:
 
+```
+
 ┌──────────────┐    Queue    ┌──────────────────┐
 │  PIR Sensor  │────────────▶│  datalogger_task │──▶ ESP_LOG
 │  HC-SR501    │  datasensor │                  │
@@ -23,7 +25,7 @@ The idea of data flow in system:
 ┌──────────────┐
 │    ESP32     │
 └──────────────┘
-
+```
 
 ## Hardware
 
@@ -32,7 +34,7 @@ The code was tested on real hardware which was ESP32-DevKitC and digital signal 
 mode set on the sensor itself.
 
 Connection of PIR Sensor to ESP32 Hardware:
-
+```
 ┌─────────────────┐         ┌─────────────────────┐
 │   HC-SR501      │         │    ESP32-DevKitC     │
 │                 │         │                      │
@@ -41,7 +43,7 @@ Connection of PIR Sensor to ESP32 Hardware:
 │  OUT  ──────────┼─────────┼── GPIO21             │
 │                 │         │                      │
 └─────────────────┘         └─────────────────────┘
-
+```
 ## How to build
 
 Building a repository needs ESP-IDF environment and it is required to set the mode of operation with menuconfig command under PIR Configuration.
