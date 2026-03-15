@@ -4,3 +4,4 @@ sdkconfig.old
 *.pyc
 .vscode/
 managed_components/
+main/pass.h

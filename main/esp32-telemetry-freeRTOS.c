@@ -9,6 +9,15 @@
 #include "esp_timer.h"
 #include "esp_system.h"
 #include "driver/gpio.h"
+#include "connection.h"
+#include "freertos/event_groups.h"
+#include "esp_wifi.h"
+#include "esp_event.h"
+#include "esp_netif.h"
+#include "nvs_flash.h"
+#include "mqtt_client.h"
+#include "lwip/err.h"
+#include "lwip/sys.h"
 
 #define PIRIO GPIO_NUM_21
 #define TAG "PIR_Sensor_System"
@@ -80,6 +89,9 @@ void datalogger_task(void *pvParameters)
 	{
 		if(xQueueReceive(buffer, ( void * ) &data2, pdMS_TO_TICKS(500)))
 		{
+			char payload[64];
+			snprintf(payload, sizeof(payload), "captured on: %lu ms with state %d", data2.timestamp, data2.PIR_sensor);
+			esp_mqtt_client_publish(mqtt_client, "sensor/pir", payload, 0, 1, 0);
 			ESP_LOGI(TAG, "captured on: %d ms with state %d",data2.timestamp, data2.PIR_sensor);
 		}
 	}
@@ -97,6 +109,20 @@ void ISRdatastream_task(void *arg)
 
 void app_main(void)
 {
+	// ESP WiFi Connection Init
+	esp_err_t ret = nvs_flash_init();
+	if (ret == ESP_ERR_NVS_NO_FREE_PAGES || ret == ESP_ERR_NVS_NEW_VERSION_FOUND) {
+      ESP_ERROR_CHECK(nvs_flash_erase());
+      ret = nvs_flash_init();
+    }
+    ESP_ERROR_CHECK(ret);
+
+	ESP_LOGI(TAG, "ESP_WIFI_MODE_STA");
+    wifi_init_sta(); // Function located in connection.c 
+
+	// ESP MQTT Broker Init
+	mqtt_init();
+
 	buffer = xQueueCreate(2, sizeof(datasensor_t));
 	//GPIO setup
 	gpio_config_t pir_config ={

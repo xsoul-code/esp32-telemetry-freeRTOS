@@ -435,8 +435,8 @@ CONFIG_PARTITION_TABLE_MD5=y
 # PIR Configuration
 #
 # CONFIG_PIR_SIMULATION_MODE is not set
-CONFIG_PIR_POLLING=y
-# CONFIG_PIR_ISR is not set
+# CONFIG_PIR_POLLING is not set
+CONFIG_PIR_ISR=y
 # end of PIR Configuration
 
 #
